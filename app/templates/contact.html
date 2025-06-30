@@ -1,0 +1,29 @@
+{% load static %}
+<section class="bg-[radial-gradient(50%_50%_at_50%_50%,rgba(26,21,21,0)_0%,rgba(1,1,1,0.16)_100%)] flex flex-col items-center justify-center  gap-10 ">
+  
+  <div class="w-full flex flex-col items-center gap-10 p-20">  
+    <div>
+        <button class="border-6 px-20 py-3 tracking-widest font-bold">C O N T A C T</button>
+    </div>
+    <div class="w-2/4">
+    <p class="  text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consectetur ab mollitia vitae voluptates!</p>
+    </div>
+  
+    <div>
+    <img src="{% static 'img/close.png' %}" alt="close icon">
+    </div>
+
+  </div>
+
+  <div class="w-full flex flex-col items-center gap-10 px-20 py-10 ">
+    <form action="" class=" flex flex-col gap-10  w-1/4  items-center font-bold   ">
+      <input type="text" name="name" required class="w-full border-b-4 border-l-4 border-black p-2 "placeholder="Enter your Name*">
+      <input type="email" name="email" required class="w-full border-b-4 border-l-4 border-black p-2" placeholder="Enter your Email*">
+      <input type="tel" name="number" required class="w-full border-b-4 border-l-4 border-black p-2 "placeholder="Enter Phone number*">
+      <textarea id="message" name="message" required rows="4"
+      class="w-full border-b-4 border-l-4 border-black p-2 " placeholder="Enter your message*"></textarea>
+      <button class="border-l-2 border-r-2 px-5 py-2 font-bold">SUBMIT</button>
+    </form>
+  </div>
+</section>
+ {% include 'footer.html' %}

@@ -1,0 +1,57 @@
+{% load static %}
+<section class="bg-[radial-gradient(50%_50%_at_50%_50%,rgba(26,21,21,0)_0%,rgba(1,1,1,0.16)_100%)] flex flex-col items-center justify-center  gap-30 py-20">
+
+  <div class="w-full flex flex-col items-center gap-30 px-5 ">
+   
+    <button class="border-6 px-20 py-3 tracking-widest font-bold">ABOUT ME</button>
+
+
+    <p class="w-2/4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consectetur ab mollitia vitae voluptates!</p>
+
+  
+    <button class="border-l-2 border-r-2 px-10 py-3 font-bold">EXPLORE</button>
+
+   
+    <img src="{% static 'img/close.png' %}" alt="close icon">
+  </div>
+
+  <div class="w-full flex flex-col items-center gap-30 px-5 ">
+
+   
+    <div class="flex flex-col md:flex-row justify-center items-start gap-10">
+
+  
+      <div class="flex items-start gap-4 max-w-sm">
+        <img src="{% static 'img/about1.png' %}" alt="design icon" class="w-18 h-16 object-contain">
+        <div>
+          <h1 class="font-bold">DESIGN</h1>
+          <p>I can design the site based on your needs and suggestions. I can also design it from scratch and consult you during the job.</p>
+        </div>
+      </div>
+
+      
+      <div class="flex items-start gap-4 max-w-sm">
+        <img src="{% static 'img/about2.png' %}" alt="development icon" class="w-18 h-16 object-contain">
+        <div>
+          <h1 class="font-bold">DEVELOPMENT</h1>
+          <p>I can develop the site based on your needs and suggestions. I can also build it from scratch and consult you during the job.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flex items-start gap-4 max-w-md">
+      <img src="{% static 'img/maintain.png' %}" alt="maintenance icon" class="w-18 h-16 object-contain">
+      <div>
+        <h1 class="font-bold">MAINTENANCE</h1>
+        <p>I can maintain and update your site as needed. I will ensure it stays secure, fast, and up to date at all times.</p>
+      </div>
+    </div>
+
+  <div>
+    <img src="{% static 'img/close.png' %}" alt="close icon">
+    </div>
+  </div>
+
+</section>
+{% include 'skil.html' %}

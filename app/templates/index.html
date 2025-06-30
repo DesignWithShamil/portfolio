@@ -1,0 +1,76 @@
+
+{% extends 'base.html' %}
+{% load static%}
+{% block content %}
+
+ <div class="bg-[linear-gradient(103deg,_rgba(215,215,215,1)_48.9%,_black_49%)] max-w-full h-screen overflow-hidden ">  
+
+
+  <nav dir="rtl" class="container bg-none p-5 w-full flex flex-col gap-2   " >
+  <ul class="flex gap-20 font-bold mr-20  items-center
+ text-white fot-">
+
+    <li class="">
+      <button class="uppercase px-4 py-2 bg-white rounded-4xl text-black ">Contact Me</button>
+    </li>
+    <li class="">Portfolio</li>
+      <li>Skill</li>
+    <li>About</li>
+  </ul>
+</nav>
+
+
+<div class="grid grid-cols-2 w-full  ">
+  
+<div class="flex flex-col font-bold    items-center justify-center gap-10">
+  <img src="{% static 'img/logo 1.jpg' %}" alt="" class="w-10 ">
+<h3 class="text-4xl ">Hi, I am</h3>
+<h1 class="text-6xl ">Tomasz Gajda</h1>
+<h5 class="opacity-40 text-xl pl-3"> Front-end Developer / UI Designer </h5>
+
+ <div class="flex mt-8 space-x-6 pl-3">
+      <a href="https://github.com/yourusername" target="_blank" class="hover:opacity-80 transition p-1 bg-[rgba(196,196,196,1)] shadow-[0_4px_6px_rgba(0,0,0,0.25)]">
+        <img src="{% static 'img/gittt.png' %}" alt="GitHub" class="w-8 h-8">
+      </a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" class="hover:opacity-80 transition p-1 bg-[rgba(196,196,196,1)] shadow-[0_4px_6px_rgba(0,0,0,0.25)]">
+        <img src="{% static 'img/vector-1.png' %}" alt="LinkedIn" class="w-8 h-8">
+
+      </a>
+       <a href="https://linkedin.com/in/yourprofile" target="_blank" class="hover:opacity-80 transition  p-1 bg-[rgba(196,196,196,1)] shadow-[0_4px_6px_rgba(0,0,0,0.25)]">
+        <img src="{% static 'img/vector-2.png' %}" alt="LinkedIn" class="w-8 h-8">
+        
+      </a>
+    </div> 
+    
+</div> 
+
+   <div class="  flex  overflow-hidden">
+  <img src="{% static 'img/image17.png' %}" alt="" class=" object-fill  "  />
+  
+  </div>
+
+ 
+
+
+
+
+</div>
+   </div>
+
+   <div class="flex bg-[rgba(29,29,29,1)] w-full items-center px-5" >
+  <div class="text-white flex-1 pl-8">
+    <h1 class="font-bold text-2xl mb-4">IT BERRIES</h1>
+    <p class="font-sans mb-4">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam in sequi reprehenderit distinctio harum aliquid, odio iure nemo consectetur culpa facilis temporibus ipsum tempora unde nam vel aperiam illo sapiente incidunt? Aspernatur officia placeat distinctio libero, harum nobis voluptatum quidem reiciendis, itaque corporis fugit consequatur, dignissimos ratione illo ducimus dicta!
+    </p>
+    <button class="border-l border-r border-gray-300 font-semibold px-4 py-2">
+      Read more
+    </button>
+  </div>
+
+  <div class="flex items-center justify-center pr-20">
+    <img src="{% static 'img/LogoITB.png' %}" alt="Logo ITB" class="w-auto max-w-xs h-auto rounded-lg shadow" />
+  </div>
+</div>
+  {% include 'about.html' %}
+{% endblock %}
